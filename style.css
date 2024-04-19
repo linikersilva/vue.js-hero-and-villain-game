@@ -1,0 +1,100 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1ecf1;
+}
+
+#app {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.personagem {
+    background-color: white;
+    border: 2px solid #1d509f;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.acoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1d509f;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1a355e;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button:disabled {
+    background-color: #0f2a55;
+    pointer-events: none;
+}
+
+.barra-vida {
+    height: 30px;
+    background-color: #4CAF50;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sprite {
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.sidebar-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.turno {
+    align-self: start;
+    width: 300px;
+}
+
+.sidebar {
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 20px;
+    position: relative;
+}
+
+.output-container {
+    max-height: calc(100% - 40px);
+    overflow-y: auto;
+}
